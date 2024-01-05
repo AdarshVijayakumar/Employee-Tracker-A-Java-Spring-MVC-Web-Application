@@ -17,9 +17,19 @@ public class Employee {
 	
 	@Column(name = "first_name")
 	private String firstName;
-	
+
 	@Column(name = "last_name")
 	private String lastName;
+
+	private String token = "jljl68kjfhdkjhk";
+
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
+	}
 	
 	@Column(name = "email")
 	private String email;
